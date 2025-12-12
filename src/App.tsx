@@ -87,7 +87,7 @@ function App() {
               </div>
               <h4 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Doświadczenie</h4>
               <p className="text-gray-400 leading-relaxed">
-                Ponad 15 lat na rynku nieruchomości w Bydgoszczy. Setki zadowolonych właścicieli i sprzedanych nieruchomości.
+                Ponad 10 lat na rynku nieruchomości w Bydgoszczy. Setki zadowolonych właścicieli i sprzedanych nieruchomości.
               </p>
             </div>
 
