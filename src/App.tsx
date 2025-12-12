@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Phone, Mail, MapPin, Award, Users, TrendingUp, CheckCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Award, Users, TrendingUp, CheckCircle, Shield, Target, Radio, DollarSign, ClipboardCheck } from 'lucide-react';
 
 function App() {
   const [formData, setFormData] = useState({
@@ -78,36 +78,108 @@ function App() {
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-12">
-            Dlaczego <span className="text-gold">Best Investments?</span>
+            Dlaczego <span className="text-gold">my:</span>
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             <div className="bg-black/50 border border-gold/20 rounded-xl p-6 sm:p-8 hover:border-gold/40 transition-all duration-300">
-              <div className="bg-gold/10 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6">
-                <Award className="text-gold" size={28} />
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-gold/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                  <ClipboardCheck className="text-gold" size={24} />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-gold font-bold text-lg">1.</span>
+                    <h4 className="text-xl font-bold">Potrzebujemy od Ciebie tylko decyzji</h4>
+                  </div>
+                </div>
               </div>
-              <h4 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Doświadczenie</h4>
               <p className="text-gray-400 leading-relaxed">
-                Ponad 10 lat na rynku nieruchomości w Bydgoszczy. Setki zadowolonych właścicieli i sprzedanych nieruchomości.
+                Zajmujemy się wszystkim od A do Z. Od wyceny, przez sprawdzenie stanu formalno-prawnego po marketing, negocjacje i korzystną sprzedaż.
               </p>
             </div>
 
             <div className="bg-black/50 border border-gold/20 rounded-xl p-6 sm:p-8 hover:border-gold/40 transition-all duration-300">
-              <div className="bg-gold/10 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6">
-                <Users className="text-gold" size={28} />
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-gold/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                  <DollarSign className="text-gold" size={24} />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-gold font-bold text-lg">2.</span>
+                    <h4 className="text-xl font-bold">Silniejszy potencjał negocjacyjny</h4>
+                  </div>
+                </div>
               </div>
-              <h4 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Indywidualne podejście</h4>
               <p className="text-gray-400 leading-relaxed">
-                Każdy właściciel jest dla nas wyjątkowy. Dopasowujemy strategię sprzedaży do Twojej nieruchomości i oczekiwań.
+                Pobieramy prowizję od jednej strony, dlatego mamy lepsze warunki negocjacyjne i uzyskujemy lepsze ceny sprzedaży dla naszych klientów.
               </p>
             </div>
 
             <div className="bg-black/50 border border-gold/20 rounded-xl p-6 sm:p-8 hover:border-gold/40 transition-all duration-300">
-              <div className="bg-gold/10 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6">
-                <TrendingUp className="text-gold" size={28} />
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-gold/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Award className="text-gold" size={24} />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-gold font-bold text-lg">3.</span>
+                    <h4 className="text-xl font-bold">Doświadczenie Best Investments</h4>
+                  </div>
+                </div>
               </div>
-              <h4 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Najlepsza cena</h4>
               <p className="text-gray-400 leading-relaxed">
-                Profesjonalna wycena i skuteczne negocjacje. Pomagamy osiągnąć najwyższą cenę za Twoją nieruchomość.
+                Właściciel biura Filip Liberda ma 10 lat doświadczenia jako pośrednik i aktywny inwestor. Zna każdy zakamarek branży, bo sam wydał na pośredników setki tysięcy złotych i wie jak przeprowadzać każdą, nawet najtrudniejszą transakcję.
+              </p>
+            </div>
+
+            <div className="bg-black/50 border border-gold/20 rounded-xl p-6 sm:p-8 hover:border-gold/40 transition-all duration-300">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-gold/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Target className="text-gold" size={24} />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-gold font-bold text-lg">4.</span>
+                    <h4 className="text-xl font-bold">Nie współpracujemy z każdym</h4>
+                  </div>
+                </div>
+              </div>
+              <p className="text-gray-400 leading-relaxed">
+                Jako biuro pracujemy na umowach na włączność, co pozwala nam wziąć pełną odpwowiedzialność za sprzedaż i odpowiednio w nią zainwestować. Tym samym unikamy "spalenia" oferty na rynku, ponieważ dbamy o interesy naszego klienta.
+              </p>
+            </div>
+
+            <div className="bg-black/50 border border-gold/20 rounded-xl p-6 sm:p-8 hover:border-gold/40 transition-all duration-300">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-gold/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Radio className="text-gold" size={24} />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-gold font-bold text-lg">5.</span>
+                    <h4 className="text-xl font-bold">Nowoczesne kanały sprzedaży</h4>
+                  </div>
+                </div>
+              </div>
+              <p className="text-gray-400 leading-relaxed">
+                Nie ograniczamy się do portali ogłoszeniowych - współpracujemy z innymi biurami, inwestorami gotówkowymi, używamy mediów społecznościowych i inwestujemy w targetowane reklamy, które pozwalają nam docierać do odpowiednich kupujących.
+              </p>
+            </div>
+
+            <div className="bg-black/50 border border-gold/20 rounded-xl p-6 sm:p-8 hover:border-gold/40 transition-all duration-300">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="bg-gold/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                  <Shield className="text-gold" size={24} />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="text-gold font-bold text-lg">6.</span>
+                    <h4 className="text-xl font-bold">Bezpieczeństwo transkacji</h4>
+                  </div>
+                </div>
+              </div>
+              <p className="text-gray-400 leading-relaxed">
+                Dbamy o Twoje bezpieczeństwo i nie pozwolimy Ci stracić pieniędzy. Drobne błędy potrafią kosztować dziesiątki tysięcy złotych - z nami masz pewność, że nic takiego się nie wydarzy.
               </p>
             </div>
           </div>
