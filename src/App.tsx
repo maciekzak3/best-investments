@@ -449,7 +449,7 @@ function App() {
                 <MapPin className="text-gold" size={24} />
               </div>
               <h4 className="font-semibold mb-2 text-base sm:text-lg">Lokalizacja</h4>
-              <p className="text-gold text-base sm:text-lg">Bydgoszcz</p>
+              <p className="text-gold text-base sm:text-lg">Gołębia 85/3, 85-309 Bydgoszcz</p>
             </div>
           </div>
         </div>
