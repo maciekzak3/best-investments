@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Phone, Mail, MapPin, Award, Users, TrendingUp, CheckCircle, Shield, Target, Radio, DollarSign, ClipboardCheck } from 'lucide-react';
+import { Phone, Mail, MapPin, Award, Users, TrendingUp, CheckCircle, Shield, Target, Radio, DollarSign, ClipboardCheck, Star } from 'lucide-react';
 
 function App() {
   const [formData, setFormData] = useState({
@@ -229,6 +229,87 @@ function App() {
                 />
               </div>
               <p className="text-xl sm:text-2xl font-semibold text-gold">Filip Liberda - właściciel Best Investments</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-black">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10 sm:mb-16">
+            <h3 className="text-2xl sm:text-4xl font-bold mb-4">
+              Co mówią nasi <span className="text-gold">klienci</span>
+            </h3>
+            <p className="text-lg sm:text-xl text-gray-300">
+              Opinie z Google
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            {/* Review 1 */}
+            <div className="bg-gray-900 border border-gold/20 rounded-xl p-6 sm:p-8 hover:border-gold/40 transition-all duration-300">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="text-gold fill-gold" size={20} />
+                ))}
+              </div>
+              <p className="text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">
+                Miałam wcześniej naprawdę kiepskie doświadczenia z biurami nieruchomości, więc do Best Investments wchodziłam z dużą rezerwą. Już po pierwszej rozmowie z Panem Filipem poczułam spokój. Widać było, że zna się na rzeczy i naprawdę chce pomóc. W biurze często mijałam jeszcze Panią Agnieszkę i Pana Mateusza, którzy zawsze witali mnie uśmiechem, pytali czy czegoś nie potrzebuję, proponowali kawę. Bardzo przyjemna atmosfera, ciepło i od razu mój stres schodził. To było pierwsze biuro, przy którym poczułam, że ktoś naprawdę stoi po mojej stronie. Z całego serca polecam.
+              </p>
+              <p className="text-gold font-semibold text-sm sm:text-base">Wiktoria Wilińska</p>
+            </div>
+
+            {/* Review 2 */}
+            <div className="bg-gray-900 border border-gold/20 rounded-xl p-6 sm:p-8 hover:border-gold/40 transition-all duration-300">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="text-gold fill-gold" size={20} />
+                ))}
+              </div>
+              <p className="text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">
+                Jestem bardzo zadowolony ze współpracy z biurem Best Investments. Przez kilka miesięcy próbowałem sprzedać swoją nieruchomość w Bydgoszczy i nic z tego nie wychodziło. Po zgłoszeniu się do Best Investments sprawa ruszyła z miejsca. Pełne zaangażowanie, nowoczesne podejście i konkretne działania. Mieszkanie sprzedało się w 2 tygodnie, i to o 25 000 zł drożej niż planowałem. Polecam każdemu.
+              </p>
+              <p className="text-gold font-semibold text-sm sm:text-base">Marek Antonowski</p>
+            </div>
+
+            {/* Review 3 */}
+            <div className="bg-gray-900 border border-gold/20 rounded-xl p-6 sm:p-8 hover:border-gold/40 transition-all duration-300">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="text-gold fill-gold" size={20} />
+                ))}
+              </div>
+              <p className="text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">
+                Z pełnym przekonaniem polecam to biuro nieruchomości. Profesjonalne podejście, doskonała komunikacja i pełne zaangażowanie od początku do końca. Jeśli szukasz rzetelnego pośrednika, to miejsce będzie strzałem w dziesiątkę.
+              </p>
+              <p className="text-gold font-semibold text-sm sm:text-base">Marcel</p>
+            </div>
+
+            {/* Review 4 */}
+            <div className="bg-gray-900 border border-gold/20 rounded-xl p-6 sm:p-8 hover:border-gold/40 transition-all duration-300">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="text-gold fill-gold" size={20} />
+                ))}
+              </div>
+              <p className="text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">
+                Polecam zakup nieruchomości za pośrednictwem Best Investments. Bardzo dobry kontakt i profesjonalne podejście do klienta.
+              </p>
+              <p className="text-gold font-semibold text-sm sm:text-base">Iwona Wróbel</p>
+            </div>
+
+            {/* Review 5 */}
+            <div className="bg-gray-900 border border-gold/20 rounded-xl p-6 sm:p-8 hover:border-gold/40 transition-all duration-300">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="text-gold fill-gold" size={20} />
+                ))}
+              </div>
+              <p className="text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">
+                Profesjonalizm, rzetelność i pomoc do samego końca – tak zapamiętam współpracę z panem Filipem Liberdą z Best Investments przy zakupie naszego mieszkania. Mimo wielu przeciwności losu transakcja zakończyła się sukcesem. Dziękujemy i polecamy z całego serca.
+              </p>
+              <p className="text-gold font-semibold text-sm sm:text-base">Miko Łaj</p>
             </div>
           </div>
         </div>
