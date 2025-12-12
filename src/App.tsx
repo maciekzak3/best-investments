@@ -216,26 +216,8 @@ function App() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-900 to-black">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex justify-center">
-            <div className="text-center">
-              <div className="inline-block border-2 border-gold/20 rounded-xl overflow-hidden mb-4">
-                <img
-                  src="/photo_2025-12-12_18-33-27.jpg"
-                  alt="Filip Liberda"
-                  className="w-64 h-64 sm:w-80 sm:h-80 object-cover"
-                />
-              </div>
-              <p className="text-xl sm:text-2xl font-semibold text-gold">Filip Liberda - właściciel Best Investments</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Testimonials Section */}
-      <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-black">
+      <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-900 to-black">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 sm:mb-16">
             <h3 className="text-2xl sm:text-4xl font-bold mb-4">
@@ -310,6 +292,24 @@ function App() {
                 Profesjonalizm, rzetelność i pomoc do samego końca – tak zapamiętam współpracę z panem Filipem Liberdą z Best Investments przy zakupie naszego mieszkania. Mimo wielu przeciwności losu transakcja zakończyła się sukcesem. Dziękujemy i polecamy z całego serca.
               </p>
               <p className="text-gold font-semibold text-sm sm:text-base">Miko Łaj</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-black">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex justify-center">
+            <div className="text-center">
+              <div className="inline-block border-2 border-gold/20 rounded-xl overflow-hidden mb-4">
+                <img
+                  src="/photo_2025-12-12_18-33-27.jpg"
+                  alt="Filip Liberda"
+                  className="w-64 h-64 sm:w-80 sm:h-80 object-cover"
+                />
+              </div>
+              <p className="text-xl sm:text-2xl font-semibold text-gold">Filip Liberda - właściciel Best Investments</p>
             </div>
           </div>
         </div>
