@@ -87,10 +87,7 @@ function App() {
                   <ClipboardCheck className="text-gold" size={24} />
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-gold font-bold text-lg">1.</span>
-                    <h4 className="text-xl font-bold">Potrzebujemy od Ciebie tylko decyzji</h4>
-                  </div>
+                  <h4 className="text-xl font-bold mb-3">Potrzebujemy od Ciebie tylko decyzji</h4>
                 </div>
               </div>
               <p className="text-gray-400 leading-relaxed">
@@ -104,10 +101,7 @@ function App() {
                   <DollarSign className="text-gold" size={24} />
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-gold font-bold text-lg">2.</span>
-                    <h4 className="text-xl font-bold">Silniejszy potencjał negocjacyjny</h4>
-                  </div>
+                  <h4 className="text-xl font-bold mb-3">Silniejszy potencjał negocjacyjny</h4>
                 </div>
               </div>
               <p className="text-gray-400 leading-relaxed">
@@ -121,10 +115,7 @@ function App() {
                   <Award className="text-gold" size={24} />
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-gold font-bold text-lg">3.</span>
-                    <h4 className="text-xl font-bold">Doświadczenie Best Investments</h4>
-                  </div>
+                  <h4 className="text-xl font-bold mb-3">Doświadczenie Best Investments</h4>
                 </div>
               </div>
               <p className="text-gray-400 leading-relaxed">
@@ -138,10 +129,7 @@ function App() {
                   <Target className="text-gold" size={24} />
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-gold font-bold text-lg">4.</span>
-                    <h4 className="text-xl font-bold">Nie współpracujemy z każdym</h4>
-                  </div>
+                  <h4 className="text-xl font-bold mb-3">Nie współpracujemy z każdym</h4>
                 </div>
               </div>
               <p className="text-gray-400 leading-relaxed">
@@ -155,10 +143,7 @@ function App() {
                   <Radio className="text-gold" size={24} />
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-gold font-bold text-lg">5.</span>
-                    <h4 className="text-xl font-bold">Nowoczesne kanały sprzedaży</h4>
-                  </div>
+                  <h4 className="text-xl font-bold mb-3">Nowoczesne kanały sprzedaży</h4>
                 </div>
               </div>
               <p className="text-gray-400 leading-relaxed">
@@ -172,10 +157,7 @@ function App() {
                   <Shield className="text-gold" size={24} />
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-gold font-bold text-lg">6.</span>
-                    <h4 className="text-xl font-bold">Bezpieczeństwo transkacji</h4>
-                  </div>
+                  <h4 className="text-xl font-bold mb-3">Bezpieczeństwo transkacji</h4>
                 </div>
               </div>
               <p className="text-gray-400 leading-relaxed">
