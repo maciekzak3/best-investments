@@ -216,6 +216,24 @@ function App() {
         </div>
       </section>
 
+      {/* Team Section */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-900 to-black">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex justify-center">
+            <div className="text-center">
+              <div className="inline-block border-2 border-gold/20 rounded-xl overflow-hidden mb-4">
+                <img
+                  src="/photo_2025-12-12_18-33-27.jpg"
+                  alt="Filip Liberda"
+                  className="w-64 h-64 sm:w-80 sm:h-80 object-cover"
+                />
+              </div>
+              <p className="text-xl sm:text-2xl font-semibold text-gold">Filip Liberda</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Form Section */}
       <section id="contact" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-black">
         <div className="max-w-4xl mx-auto">
@@ -351,19 +369,6 @@ function App() {
               </div>
               <h4 className="font-semibold mb-2 text-base sm:text-lg">Lokalizacja</h4>
               <p className="text-gold text-base sm:text-lg">Bydgoszcz</p>
-            </div>
-          </div>
-
-          <div className="mt-12 sm:mt-16 flex justify-center">
-            <div className="text-center">
-              <div className="inline-block border-2 border-gold/20 rounded-xl overflow-hidden mb-4">
-                <img
-                  src="/photo_2025-12-12_18-33-27.jpg"
-                  alt="Filip Liberda"
-                  className="w-64 h-64 sm:w-80 sm:h-80 object-cover"
-                />
-              </div>
-              <p className="text-xl sm:text-2xl font-semibold text-gold">Filip Liberda</p>
             </div>
           </div>
         </div>
