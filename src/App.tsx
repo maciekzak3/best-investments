@@ -64,7 +64,7 @@ function App() {
               Bezpłatna wycena
             </button>
             <a
-              href="tel:+48123456789"
+              href="tel:+48515616384"
               className="w-full sm:w-auto border-2 border-gold text-gold hover:bg-gold hover:text-black font-bold px-8 py-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 text-lg"
             >
               <Phone size={20} />
@@ -368,7 +368,7 @@ function App() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 sm:py-4 bg-black border border-gold/30 rounded-lg focus:outline-none focus:border-gold transition-colors text-white text-base sm:text-lg"
-                    placeholder="+48 123 456 789"
+                    placeholder="+48 515 616 384"
                   />
                 </div>
 
@@ -423,14 +423,14 @@ function App() {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             <a
-              href="tel:+48123456789"
+              href="tel:+48515616384"
               className="bg-black/50 border border-gold/20 rounded-xl p-6 hover:border-gold/40 transition-all duration-300 text-center group"
             >
               <div className="bg-gold/10 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-gold/20 transition-all duration-300">
                 <Phone className="text-gold" size={24} />
               </div>
               <h4 className="font-semibold mb-2 text-base sm:text-lg">Telefon</h4>
-              <p className="text-gold text-base sm:text-lg">+48 123 456 789</p>
+              <p className="text-gold text-base sm:text-lg">+48 515 616 384</p>
             </a>
 
             <a
