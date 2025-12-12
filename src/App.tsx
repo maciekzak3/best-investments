@@ -168,8 +168,42 @@ function App() {
         </div>
       </section>
 
-      {/* Video Section */}
+      {/* Filip Liberda Section */}
       <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-black">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <h3 className="text-2xl sm:text-4xl font-bold mb-6">
+                Poznaj <span className="text-gold">Filipa Liberdę</span>
+              </h3>
+              <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                Właściciel biura Best Investments z 10-letnim doświadczeniem jako pośrednik i aktywny inwestor nieruchomości.
+              </p>
+              <p className="text-lg text-gray-300 leading-relaxed mb-6">
+                Zna każdy zakamarek branży, bo sam wydał na pośredników setki tysięcy złotych i wie jak przeprowadzać każdą, nawet najtrudniejszą transakcję.
+              </p>
+              <p className="text-lg text-gray-300 leading-relaxed">
+                Jego misją jest zapewnienie profesjonalnej obsługi i maksymalnej wartości dla każdego klienta.
+              </p>
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="relative">
+                <img
+                  src="/photo_2025-12-12_18-33-27.jpg"
+                  alt="Filip Liberda"
+                  className="w-full h-auto rounded-xl border-2 border-gold/30 shadow-2xl shadow-gold/20"
+                />
+                <div className="absolute -bottom-4 -right-4 bg-gold text-black px-6 py-3 rounded-lg font-bold shadow-xl">
+                  Filip Liberda
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-4xl mx-auto">
           <h3 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">
             Zobacz jak <span className="text-gold">pracujemy</span>
