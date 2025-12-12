@@ -228,7 +228,7 @@ function App() {
                   className="w-64 h-64 sm:w-80 sm:h-80 object-cover"
                 />
               </div>
-              <p className="text-xl sm:text-2xl font-semibold text-gold">Filip Liberda</p>
+              <p className="text-xl sm:text-2xl font-semibold text-gold">Filip Liberda - właściciel Best Investments</p>
             </div>
           </div>
         </div>
