@@ -50,10 +50,10 @@ function App() {
       <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 leading-tight">
-            Twoja inwestycja w <span className="text-gold">nieruchomości</span> zaczyna się tutaj
+            Sprzedaj swoją <span className="text-gold">nieruchomość</span> szybko i korzystnie
           </h2>
           <p className="text-lg sm:text-xl text-gray-300 mb-8 sm:mb-12 leading-relaxed">
-            Profesjonalne doradztwo, sprawdzone inwestycje, pewne zyski.
+            Profesjonalna wycena, skuteczna sprzedaż, najlepsza cena.
             Zaufaj ekspertom z wieloletnim doświadczeniem na rynku nieruchomości w Bydgoszczy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -61,7 +61,7 @@ function App() {
               onClick={scrollToContact}
               className="w-full sm:w-auto bg-gold hover:bg-gold-dark text-black font-bold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-xl shadow-gold/30 text-lg"
             >
-              Bezpłatna konsultacja
+              Bezpłatna wycena
             </button>
             <a
               href="tel:+48123456789"
@@ -87,7 +87,7 @@ function App() {
               </div>
               <h4 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Doświadczenie</h4>
               <p className="text-gray-400 leading-relaxed">
-                Ponad 15 lat na rynku nieruchomości w Bydgoszczy. Setki zadowolonych klientów i udanych transakcji.
+                Ponad 15 lat na rynku nieruchomości w Bydgoszczy. Setki zadowolonych właścicieli i sprzedanych nieruchomości.
               </p>
             </div>
 
@@ -97,7 +97,7 @@ function App() {
               </div>
               <h4 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Indywidualne podejście</h4>
               <p className="text-gray-400 leading-relaxed">
-                Każdy klient jest dla nas wyjątkowy. Dopasowujemy ofertę do Twoich potrzeb i możliwości finansowych.
+                Każdy właściciel jest dla nas wyjątkowy. Dopasowujemy strategię sprzedaży do Twojej nieruchomości i oczekiwań.
               </p>
             </div>
 
@@ -105,9 +105,9 @@ function App() {
               <div className="bg-gold/10 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-6">
                 <TrendingUp className="text-gold" size={28} />
               </div>
-              <h4 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Najlepsze oferty</h4>
+              <h4 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Najlepsza cena</h4>
               <p className="text-gray-400 leading-relaxed">
-                Dostęp do ekskluzywnych ofert inwestycyjnych. Pomagamy znaleźć nieruchomości z najwyższym potencjałem.
+                Profesjonalna wycena i skuteczne negocjacje. Pomagamy osiągnąć najwyższą cenę za Twoją nieruchomość.
               </p>
             </div>
           </div>
@@ -118,7 +118,7 @@ function App() {
       <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-black">
         <div className="max-w-4xl mx-auto">
           <h3 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">
-            Poznaj naszą <span className="text-gold">ofertę</span>
+            Zobacz jak <span className="text-gold">pracujemy</span>
           </h3>
           <div className="relative aspect-video bg-gray-900 rounded-xl overflow-hidden border-2 border-gold/30 shadow-2xl shadow-gold/10">
             <div className="absolute inset-0 flex items-center justify-center">
@@ -147,10 +147,10 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {[
               'Bezpłatna wycena nieruchomości',
-              'Pomoc w wyborze najlepszej inwestycji',
+              'Profesjonalna fotografia i prezentacja',
               'Kompleksowa obsługa prawna',
               'Wsparcie w negocjacjach',
-              'Pomoc w uzyskaniu finansowania',
+              'Marketing i promocja ogłoszenia',
               'Stały kontakt z doradcą'
             ].map((benefit, index) => (
               <div key={index} className="flex items-start gap-3 sm:gap-4 bg-black/30 p-4 sm:p-5 rounded-lg border border-gold/10 hover:border-gold/30 transition-all duration-300">
@@ -246,7 +246,7 @@ function App() {
                     onChange={handleChange}
                     rows={4}
                     className="w-full px-4 py-3 sm:py-4 bg-black border border-gold/30 rounded-lg focus:outline-none focus:border-gold transition-colors text-white resize-none text-base sm:text-lg"
-                    placeholder="Opisz swoją sytuację lub zadaj pytanie..."
+                    placeholder="Opisz swoją nieruchomość lub zadaj pytanie..."
                   />
                 </div>
 
