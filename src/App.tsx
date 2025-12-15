@@ -165,24 +165,19 @@ function App() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Video Section */}
-      <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-black">
-        <div className="max-w-4xl mx-auto">
-          <h3 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">
-            Zobacz jak <span className="text-gold">pracujemy</span>
-          </h3>
-          <div className="relative aspect-video bg-gray-900 rounded-xl overflow-hidden border-2 border-gold/30 shadow-2xl shadow-gold/10">
-            <video
-              controls
-              className="w-full h-full"
-              poster="/zyti-egi4fk-sd.jpg"
-            >
-              <source src="https://pub-fba33842c91c4b7c939f0b4496f120f7.r2.dev/PAKIET%20KOMFORT%20W%20BIURZE%20BEST%20INVESTMENTS%20-%20TO%20JEST%20KOMFORT%20NA%20JAKI%20ZAS%C5%81UGUJESZ.mp4" type="video/mp4" />
-              Twoja przeglądarka nie obsługuje odtwarzania wideo.
-            </video>
+          {/* Video */}
+          <div className="mt-12 sm:mt-16 max-w-4xl mx-auto">
+            <div className="relative aspect-video bg-gray-900 rounded-xl overflow-hidden border-2 border-gold/30 shadow-2xl shadow-gold/10">
+              <video
+                controls
+                className="w-full h-full"
+                poster="/zyti-egi4fk-sd.jpg"
+              >
+                <source src="https://pub-fba33842c91c4b7c939f0b4496f120f7.r2.dev/PAKIET%20KOMFORT%20W%20BIURZE%20BEST%20INVESTMENTS%20-%20TO%20JEST%20KOMFORT%20NA%20JAKI%20ZAS%C5%81UGUJESZ.mp4" type="video/mp4" />
+                Twoja przeglądarka nie obsługuje odtwarzania wideo.
+              </video>
+            </div>
           </div>
         </div>
       </section>
