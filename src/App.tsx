@@ -6,24 +6,52 @@ function App() {
     name: '',
     phone: '',
     email: '',
-    message: ''
+    message: '',
+    consent: false
   });
 
-  const [formStatus, setFormStatus] = useState<'idle' | 'success'>('idle');
+  const [formStatus, setFormStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setFormStatus('success');
-    setTimeout(() => {
-      setFormStatus('idle');
-      setFormData({ name: '', phone: '', email: '', message: '' });
-    }, 3000);
+
+    try {
+      const response = await fetch('https://n8n.procesflow.pl/webhook/ad40451f-89ce-4ef3-b924-2d4d701c241a', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          message: formData.message
+        })
+      });
+
+      if (response.ok) {
+        setFormStatus('success');
+        setTimeout(() => {
+          setFormStatus('idle');
+          setFormData({ name: '', phone: '', email: '', message: '', consent: false });
+        }, 3000);
+      } else {
+        setFormStatus('error');
+        setTimeout(() => setFormStatus('idle'), 3000);
+      }
+    } catch (error) {
+      setFormStatus('error');
+      setTimeout(() => setFormStatus('idle'), 3000);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const target = e.target as HTMLInputElement;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [target.name]: value
     });
   };
 
@@ -394,9 +422,35 @@ function App() {
                   />
                 </div>
 
+                <div className="flex items-start gap-3">
+                  <input
+                    type="checkbox"
+                    id="consent"
+                    name="consent"
+                    checked={formData.consent}
+                    onChange={handleChange}
+                    required
+                    className="mt-1 w-5 h-5 bg-black border-2 border-gold/30 rounded focus:outline-none focus:ring-2 focus:ring-gold/50 checked:bg-gold checked:border-gold cursor-pointer"
+                  />
+                  <label htmlFor="consent" className="text-sm text-gray-300 leading-relaxed cursor-pointer">
+                    Wyrażam zgodę na przetwarzanie moich danych osobowych przez Best Investments w celu kontaktu oraz przedstawienia oferty zgodnie z{' '}
+                    <a href="https://www.gov.pl/web/ia/rodo" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">
+                      RODO
+                    </a>
+                    . *
+                  </label>
+                </div>
+
+                {formStatus === 'error' && (
+                  <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-4 text-red-400 text-center">
+                    Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie.
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full bg-gold hover:bg-gold-dark text-black font-bold px-8 py-4 sm:py-5 rounded-lg transition-all duration-300 transform hover:scale-[1.02] shadow-xl shadow-gold/30 text-base sm:text-lg"
+                  disabled={!formData.consent}
+                  className="w-full bg-gold hover:bg-gold-dark text-black font-bold px-8 py-4 sm:py-5 rounded-lg transition-all duration-300 transform hover:scale-[1.02] shadow-xl shadow-gold/30 text-base sm:text-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                 >
                   Wyślij wiadomość
                 </button>
