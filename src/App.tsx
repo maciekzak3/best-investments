@@ -80,6 +80,21 @@ function App() {
           <h3 className="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-12">
             Dlaczego <span className="text-gold">my:</span>
           </h3>
+
+          {/* Video */}
+          <div className="mb-10 sm:mb-12 max-w-4xl mx-auto">
+            <div className="relative aspect-video bg-gray-900 rounded-xl overflow-hidden border-2 border-gold/30 shadow-2xl shadow-gold/10">
+              <video
+                controls
+                className="w-full h-full"
+                poster="/zyti-egi4fk-sd.jpg"
+              >
+                <source src="https://pub-fba33842c91c4b7c939f0b4496f120f7.r2.dev/PAKIET%20KOMFORT%20W%20BIURZE%20BEST%20INVESTMENTS%20-%20TO%20JEST%20KOMFORT%20NA%20JAKI%20ZAS%C5%81UGUJESZ.mp4" type="video/mp4" />
+                Twoja przeglądarka nie obsługuje odtwarzania wideo.
+              </video>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
             <div className="bg-black/50 border border-gold/20 rounded-xl p-6 sm:p-8 hover:border-gold/40 transition-all duration-300">
               <div className="flex items-start gap-4 mb-4">
@@ -163,20 +178,6 @@ function App() {
               <p className="text-gray-400 leading-relaxed">
                 Dbamy o Twoje bezpieczeństwo i nie pozwolimy Ci stracić pieniędzy. Drobne błędy potrafią kosztować dziesiątki tysięcy złotych - z nami masz pewność, że nic takiego się nie wydarzy.
               </p>
-            </div>
-          </div>
-
-          {/* Video */}
-          <div className="mt-12 sm:mt-16 max-w-4xl mx-auto">
-            <div className="relative aspect-video bg-gray-900 rounded-xl overflow-hidden border-2 border-gold/30 shadow-2xl shadow-gold/10">
-              <video
-                controls
-                className="w-full h-full"
-                poster="/zyti-egi4fk-sd.jpg"
-              >
-                <source src="https://pub-fba33842c91c4b7c939f0b4496f120f7.r2.dev/PAKIET%20KOMFORT%20W%20BIURZE%20BEST%20INVESTMENTS%20-%20TO%20JEST%20KOMFORT%20NA%20JAKI%20ZAS%C5%81UGUJESZ.mp4" type="video/mp4" />
-                Twoja przeglądarka nie obsługuje odtwarzania wideo.
-              </video>
             </div>
           </div>
         </div>
