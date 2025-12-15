@@ -175,19 +175,14 @@ function App() {
             Zobacz jak <span className="text-gold">pracujemy</span>
           </h3>
           <div className="relative aspect-video bg-gray-900 rounded-xl overflow-hidden border-2 border-gold/30 shadow-2xl shadow-gold/10">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center px-4">
-                <div className="bg-gold/10 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
-                  <CheckCircle className="text-gold" size={36} />
-                </div>
-                <p className="text-lg sm:text-xl text-gray-300 font-medium">
-                  Film prezentacyjny zostanie wkrótce dodany
-                </p>
-                <p className="text-sm sm:text-base text-gray-500 mt-2">
-                  Przejrzyj formularz poniżej, aby umówić się na spotkanie
-                </p>
-              </div>
-            </div>
+            <video
+              controls
+              className="w-full h-full"
+              poster="/zyti-egi4fk-sd.jpg"
+            >
+              <source src="https://pub-fba33842c91c4b7c939f0b4496f120f7.r2.dev/PAKIET%20KOMFORT%20W%20BIURZE%20BEST%20INVESTMENTS%20-%20TO%20JEST%20KOMFORT%20NA%20JAKI%20ZAS%C5%81UGUJESZ.mp4" type="video/mp4" />
+              Twoja przeglądarka nie obsługuje odtwarzania wideo.
+            </video>
           </div>
         </div>
       </section>
